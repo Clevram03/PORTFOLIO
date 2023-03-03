@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navibar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+}
+
+.navibar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navibar ul li{
+    font-family: century;
+    font-size: 1.1rem; /*root em */
+    font-weight: bold;
+
+}
+.navibar ul li{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5 ease;
+}
+.navibar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .2s ease;
+}
+/*when hovering*/
+.navibar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/*Home*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+/**/
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('Images/wideCarthe.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+     
+}
+.Lname{
+    color:aquamarine;
+}
+
+
+.mainHome{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid white;*/
+    align-items: center;
+    position: absolute;
+    top:20%;
+    left: 1%;
+    
+
+}
+
+.heading{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+    
+}
+
+/*About*/
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+
+}
+#pic img{
+    width: 500px;
+    height: 500px;
+}
+#introduction{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#introduction h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/*Gallery*/
+#portGallery{
+    display: flex;
+    flex-direction:column ;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    padding: 30px;
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+
+}
+.gallery img{
+    width: 20%;
+    height: 20%;
+    margin: 10px;
+}
+
+#pic2 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+/*expectation*/
+#expectPort{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+/*Contact*/
+
+#portContact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;  
+    outline: none;
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
